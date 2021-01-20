@@ -68,7 +68,7 @@ int m, n, c, d, first[10][10], second[10][10], sum[10][10];
    for (c = 0; c < m; c++)
       for (d = 0; d < n; d++)
       {
-         printf("Bir değer a[%d][%d] girin : ",c,d);
+         printf("Bir değer [%d][%d] girin : ",c,d);
                  scanf("%d", &first[c][d]);
                  }
  
