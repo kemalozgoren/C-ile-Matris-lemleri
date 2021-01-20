@@ -13,18 +13,18 @@ void menu(){
 int islem;
 setlocale(LC_ALL, "Turkish");
 system("cls");
-printf("********* Matris Ýþlemleri *********\n");
-printf("********* Kemal Özgören *********\n");
-printf("\t1-Toplama Ýþlemi\n");
-printf("\t2-Çýkarma Ýþlemi\n");
-printf("\t3-Çarpma Ýþlemi\n");
-printf("\t4-Sabit Çarpma Ýþlemi\n");
-printf("\t5-Transpoze Ýþlemi\n");
-printf("\t6-Determinant Ýþlemi\n");
-printf("\t7-Tersi Ýþlemi\n");
-printf("\t8-Deðiþ Tokuþ Ýþlemi\n");
-printf("\t0-Çýkýþ\n\n");
-printf("Ýþlem Seçiniz: ");
+printf("********* Matris Ä°ÅŸlemleri *********\n");
+printf("********* Kemal Ã–zgÃ¶ren *********\n");
+printf("\t1-Toplama Ä°ÅŸlemi\n");
+printf("\t2-Ã‡Ä±karma Ä°ÅŸlemi\n");
+printf("\t3-Ã‡arpma Ä°ÅŸlemi\n");
+printf("\t4-Sabit Ã‡arpma Ä°ÅŸlemi\n");
+printf("\t5-Transpoze Ä°ÅŸlemi\n");
+printf("\t6-Determinant Ä°ÅŸlemi\n");
+printf("\t7-Tersi Ä°ÅŸlemi\n");
+printf("\t8-DeÄŸiÅŸ TokuÅŸ Ä°ÅŸlemi\n");
+printf("\t0-Ã‡Ä±kÄ±ÅŸ\n\n");
+printf("Ä°ÅŸlem SeÃ§iniz: ");
 scanf("%d", &islem);
 switch(islem){
 case 0: exit(1);
@@ -45,7 +45,7 @@ case 7: reverse();
 break;
 case 8: swap();
 break;
-default: printf("Yanlýþ iþlem seçtiniz!!!\n");
+default: printf("YanlÄ±ÅŸ iÅŸlem seÃ§tiniz!!!\n");
 system("PAUSE");
 menu();
 }
@@ -55,33 +55,33 @@ void topla(){
 system("cls");
 int m, n, c, d, first[10][10], second[10][10], sum[10][10];
  
-    printf("Toplama iþlemi için \n");
-    printf("Satýr sayýsý girin: ", m);
+    printf("Toplama iÅŸlemi iÃ§in \n");
+    printf("SatÄ±r sayÄ±sÄ± girin: ", m);
     scanf("%d",&m);
-    printf("Sütun sayýsý girin: ", n);
+    printf("SÃ¼tun sayÄ±sÄ± girin: ", n);
        scanf("%d",&n);
      
-   /*printf("Toplama iþlemi için Satýrlarý ve sütunlarý girin\n");
+   /*printf("Toplama iÅŸlemi iÃ§in SatÄ±rlarÄ± ve sÃ¼tunlarÄ± girin\n");
    scanf("%d%d", &m, &n);*/
-   printf("Ýlk matrisin elemanlarýný girin\n");
+   printf("Ä°lk matrisin elemanlarÄ±nÄ± girin\n");
  
    for (c = 0; c < m; c++)
       for (d = 0; d < n; d++)
       {
-         printf("Bir deðer a[%d][%d] girin :: ",c,d);
+         printf("Bir deÄŸer a[%d][%d] girin :: ",c,d);
                  scanf("%d", &first[c][d]);
                  }
  
-   printf("Ýkinci matrisin elemanlarýný girin\n");
+   printf("Ä°kinci matrisin elemanlarÄ±nÄ± girin\n");
  
    for (c = 0; c < m; c++)
       for (d = 0 ; d < n; d++)
         {
-         printf("Bir deðer a[%d][%d] girin :: ",c,d);
+         printf("Bir deÄŸer a[%d][%d] girin :: ",c,d);
                  scanf("%d", &second[c][d]);
                  }
    
-   printf("Girilen matrisin toplamý:-\n");
+   printf("Girilen matrisin toplamÄ±:-\n");
    
    for (c = 0; c < m; c++) {
       for (d = 0 ; d < n; d++) {
@@ -93,37 +93,37 @@ int m, n, c, d, first[10][10], second[10][10], sum[10][10];
 system("PAUSE");
 menu();
 }
-///TOPLA BÝTTÝ
+///TOPLA BÄ°TTÄ°
 
-/// ÇIKAR
+/// Ã‡IKAR
 void cikar(){
 system("cls");
 int m, n, c, d, first[10][10], second[10][10], difference[10][10];
  
-    printf("Çýkarma iþlemi için \n");
-    printf("Satýr sayýsý girin: ", m);
+    printf("Ã‡Ä±karma iÅŸlemi iÃ§in \n");
+    printf("SatÄ±r sayÄ±sÄ± girin: ", m);
     scanf("%d",&m);
-    printf("Sütun sayýsý girin: ", n);
+    printf("SÃ¼tun sayÄ±sÄ± girin: ", n);
        scanf("%d",&n);
-   printf("Ýlk matrisin elemanlarýný girin\n");
+   printf("Ä°lk matrisin elemanlarÄ±nÄ± girin\n");
  
    for (c = 0; c < m; c++)
      for (d = 0 ; d < n; d++)
        {
-         printf("Bir deðer a[%d][%d] girin : ",c,d);
+         printf("Bir deÄŸer a[%d][%d] girin : ",c,d);
                  scanf("%d", &first[c][d]);
                  }
  
-   printf("Ýkinci matrisin elemanlarýný girin\n");
+   printf("Ä°kinci matrisin elemanlarÄ±nÄ± girin\n");
  
    for (c = 0; c < m; c++)
      for (d = 0; d < n; d++)
          {
-         printf("Bir deðer a[%d][%d] girin : ",c,d);
+         printf("Bir deÄŸer a[%d][%d] girin : ",c,d);
                  scanf("%d", &second[c][d]);
                  }
  
-   printf("Çýkartma iþlemin sonucu:\n");
+   printf("Ã‡Ä±kartma iÅŸlemin sonucu:\n");
  
    for (c = 0; c < m; c++) {
      for (d = 0; d < n; d++) {
@@ -135,43 +135,43 @@ int m, n, c, d, first[10][10], second[10][10], difference[10][10];
 system("PAUSE");
 menu();
 }
-///ÇIKAR BÝTTÝ
-//ÇARP
+///Ã‡IKAR BÄ°TTÄ°
+//Ã‡ARP
 void carp(){
 system("cls");
 int m, n, p, q, c, d, k, sum = 0;
   int first[10][10], second[10][10], multiply[10][10];
  
-   printf("Çarma iþlemi için ilk matrisin \n");
-    printf("Satýr sayýsý girin: ", m);
+   printf("Ã‡arma iÅŸlemi iÃ§in ilk matrisin \n");
+    printf("SatÄ±r sayÄ±sÄ± girin: ", m);
     scanf("%d",&m);
-    printf("Sütun sayýsý girin: ", n);
+    printf("SÃ¼tun sayÄ±sÄ± girin: ", n);
        scanf("%d",&n);
-  printf("Ýlk matrisin elemanlarýný girin\n");
+  printf("Ä°lk matrisin elemanlarÄ±nÄ± girin\n");
  
   for (c = 0; c < m; c++)
     for (d = 0; d < n; d++)
       {
-         printf("Bir deðer a[%d][%d] girin :: ",c,d);
+         printf("Bir deÄŸer a[%d][%d] girin :: ",c,d);
                  scanf("%d", &first[c][d]);
                  }
  
-   printf("Ýkinci matris için \n");
-    printf("Satýr sayýsý girin: ", p);
+   printf("Ä°kinci matris iÃ§in \n");
+    printf("SatÄ±r sayÄ±sÄ± girin: ", p);
     scanf("%d",&p);
-    printf("Sütun sayýsý girin: ", q);
+    printf("SÃ¼tun sayÄ±sÄ± girin: ", q);
        scanf("%d",&q);
  
   if (n != p)
-    printf("Bu çarpma gerçekleþemez.\n");
+    printf("Bu Ã§arpma gerÃ§ekleÅŸemez.\n");
   else
   {
-    printf("Ýkinci matrisin elemanlarýný girin\n");
+    printf("Ä°kinci matrisin elemanlarÄ±nÄ± girin\n");
  
     for (c = 0; c < p; c++)
       for (d = 0; d < q; d++)
         {
-         printf("Bir deðer a[%d][%d] girin :: ",c,d);
+         printf("Bir deÄŸer a[%d][%d] girin :: ",c,d);
                  scanf("%d", &second[c][d]);
                  }
  
@@ -186,7 +186,7 @@ int m, n, p, q, c, d, k, sum = 0;
       }
     }
  
-    printf("Matrislerin çarpýmý:\n");
+    printf("Matrislerin Ã§arpÄ±mÄ±:\n");
  
     for (c = 0; c < m; c++) {
       for (d = 0; d < q; d++)
@@ -198,23 +198,23 @@ int m, n, p, q, c, d, k, sum = 0;
 system("PAUSE");
 menu();
 }
-//ÇARP BÝTTÝ
-///SABÝT ÇARP
+//Ã‡ARP BÄ°TTÄ°
+///SABÄ°T Ã‡ARP
 void sabmultiplication(){
 system("cls");
     int A[10][10],i,j,m,n;
     int row, col, num;
  
-    printf("Satýr sayýsýný girin :: ");
+    printf("SatÄ±r sayÄ±sÄ±nÄ± girin :: ");
         scanf("%d", &m);
-        printf("Sütun sayýsýný girin :: ");
+        printf("SÃ¼tun sayÄ±sÄ±nÄ± girin :: ");
         scanf("%d",&n);
-        printf("\nMatris elemanlarýný girin :: \n");
+        printf("\nMatris elemanlarÄ±nÄ± girin :: \n");
         for (i = 0; i < m; i++)
         {
             for (j = 0; j < n; j++)
             {
-                 printf("Bir deðer a[%d][%d] girin :: ",i,j);
+                 printf("Bir deÄŸer a[%d][%d] girin :: ",i,j);
                  scanf("%d", &A[i][j]);
         }
     }
@@ -230,7 +230,7 @@ system("cls");
             printf("\n\n");
         }
  
-    printf("\nMatrisle çarpmak için herhangi bir sayý girin :: ");
+    printf("\nMatrisle Ã§arpmak iÃ§in herhangi bir sayÄ± girin :: ");
     scanf("%d", &num);
 
     for(row=0; row<m; row++)
@@ -241,7 +241,7 @@ system("cls");
         }
     }
  
-    printf("\nMatrisin skaler çarpýmý = \n\n");
+    printf("\nMatrisin skaler Ã§arpÄ±mÄ± = \n\n");
     for (i = 0; i < m; ++i)
         {
             for (j = 0; j < n; ++j)
@@ -253,18 +253,18 @@ system("cls");
 system("PAUSE");
 menu();
 }
-///SABÝT ÇARP BÝTTÝ
+///SABÄ°T Ã‡ARP BÄ°TTÄ°
 ///TRANSPOZE
 void transpose(){
 system("cls");
 int a[10][10], transpose[10][10], r, c, i, j;
-    printf("Transpoze iþlemi için Satýrlarý ve sütunlarý girin: ");
+    printf("Transpoze iÅŸlemi iÃ§in SatÄ±rlarÄ± ve sÃ¼tunlarÄ± girin: ");
     scanf("%d %d", &r, &c);
 
-    printf("\nMatris elemanlarýný girin:\n");
+    printf("\nMatris elemanlarÄ±nÄ± girin:\n");
     for (i = 0; i < r; ++i)
         for (j = 0; j < c; ++j) {
-            printf("Bir deðer [%d][%d] girin: ", i, j);
+            printf("Bir deÄŸer [%d][%d] girin: ", i, j);
             scanf("%d", &a[i][j]);
         }
 
@@ -290,24 +290,24 @@ int a[10][10], transpose[10][10], r, c, i, j;
 system("PAUSE");
 menu();
 }
-///TRANSPOZE BÝTTÝ
+///TRANSPOZE BÄ°TTÄ°
 ///Determinant
 void determinant(){
 system("cls");
 int A[10][10];
     int c,d,m,n;
     long det;
-    printf("Determinant iþlemi için \n");
-    printf("Satýr sayýsý girin: ", m);
+    printf("Determinant iÅŸlemi iÃ§in \n");
+    printf("SatÄ±r sayÄ±sÄ± girin: ", m);
     scanf("%d",&m);
-    printf("Sütun sayýsý girin: ", n);
+    printf("SÃ¼tun sayÄ±sÄ± girin: ", n);
        scanf("%d",&n);
-    printf("Matrisin elemanlarýný girin: \n");
+    printf("Matrisin elemanlarÄ±nÄ± girin: \n");
     for(c=0; c<m; c++)
     {
         for(d=0; d<n; d++)
         {
-            printf("Bir deðer [%d][%d] girin: ", c, d);
+            printf("Bir deÄŸer [%d][%d] girin: ", c, d);
             scanf("%d", &A[c][d]);
 			
         }
@@ -319,28 +319,28 @@ int A[10][10];
      */
     det = (A[0][0] * A[1][1]) - (A[0][1] * A[1][0]);
 
-    printf("Matris'in Determinantý = %ld", det);
+    printf("Matris'in DeterminantÄ± = %ld", det);
     printf("\n");
 system("PAUSE");
 menu();
 }
-///Determinant BÝTTÝ
+///Determinant BÄ°TTÄ°
 //swap
 void swap (){
 system("cls");
 static int array1[10][10], array2[10][10];
     int i, j, m, n, a, b, c, p, q, r;
- 		printf("Deðiþ Tokuþ iþlemi için \n");
-        printf("Satýr sayýsýný girin: ");
+ 		printf("DeÄŸiÅŸ TokuÅŸ iÅŸlemi iÃ§in \n");
+        printf("SatÄ±r sayÄ±sÄ±nÄ± girin: ");
         scanf("%d", &m);
-        printf("\nSütun sayýsýný girin: ");
+        printf("\nSÃ¼tun sayÄ±sÄ±nÄ± girin: ");
         scanf("%d",&n);
-        printf("\nMatris elemanlarýný girin: \n");
+        printf("\nMatris elemanlarÄ±nÄ± girin: \n");
         for (i = 0; i < m; i++)
         {
             for (j = 0; j < n; j++)
             {
-                 printf("\nBir deðer [%d][%d] girin: ",i,j);
+                 printf("\nBir deÄŸer [%d][%d] girin: ",i,j);
                  scanf("%d", &array1[i][j]);
                  array2[i][j] = array1[i][j];
         }
@@ -357,9 +357,9 @@ static int array1[10][10], array2[10][10];
     }
     
     
-    printf("\nDeðiþtirilecek satýr numarasýný girin : ");
+    printf("\nDeÄŸiÅŸtirilecek satÄ±r numarasÄ±nÄ± girin : ");
     scanf("%d", &a);
-    printf("\nDeðiþ tokuþ edilecek diðer satýr numarasýný girin: ");
+    printf("\nDeÄŸiÅŸ tokuÅŸ edilecek diÄŸer satÄ±r numarasÄ±nÄ± girin: ");
     scanf("%d",&b);
     
     for (i = 0; i < m; ++i)
@@ -368,9 +368,9 @@ static int array1[10][10], array2[10][10];
         array1[a - 1][i] = array1[b - 1][i];
         array1[b - 1][i] = c;
     }
-    printf("\nDeðiþtirilecek sütun numarasýný girin : ");
+    printf("\nDeÄŸiÅŸtirilecek sÃ¼tun numarasÄ±nÄ± girin : ");
     scanf("%d", &p);
-    printf("\nDeðiþ tokuþ edilecek diðer satýr numarasýný girin : ");
+    printf("\nDeÄŸiÅŸ tokuÅŸ edilecek diÄŸer satÄ±r numarasÄ±nÄ± girin : ");
     scanf("%d",&q);
     
     for (i = 0; i < n; ++i)
@@ -379,7 +379,7 @@ static int array1[10][10], array2[10][10];
         array2[i][p - 1] = array2[i][q - 1];
         array2[i][q - 1] = r;
      }
-    printf("\nÝki satýrý deðiþtirdikten sonraki matris:  \n");
+    printf("\nÄ°ki satÄ±rÄ± deÄŸiÅŸtirdikten sonraki matris:  \n");
     for (i = 0; i < m; ++i)
         {
         for (j = 0; j < n; ++j)
@@ -389,7 +389,7 @@ static int array1[10][10], array2[10][10];
         printf("\n\n");
     }
     
-    printf("\nÝki sütunu deðiþtirdikten sonraki matris: \n");
+    printf("\nÄ°ki sÃ¼tunu deÄŸiÅŸtirdikten sonraki matris: \n");
     
     for (i = 0; i < m; ++i)
         {
@@ -411,8 +411,8 @@ void reverse (){
 system("cls");
     
 printf ("\n");
-        printf ("***** YAPAMADIM! ÝSTENÝLENÝ ANLAMADIM*****\n");
-        printf ("***** HERHANGÝ BÝR TUÞA BASARAK MENÜYE DÖNÜN!*****\n");
+        printf ("***** YAPAMADIM! Ä°STENÄ°LENÄ° ANLAMADIM*****\n");
+        printf ("***** HERHANGÄ° BÄ°R TUÅžA BASARAK MENÃœYE DÃ–NÃœN!*****\n");
     
 system("PAUSE");
 menu();
@@ -421,4 +421,3 @@ menu();
 int main(){
 menu();
 }
-
