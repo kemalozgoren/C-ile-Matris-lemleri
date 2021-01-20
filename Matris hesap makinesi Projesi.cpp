@@ -56,9 +56,9 @@ system("cls");
 int m, n, c, d, first[10][10], second[10][10], sum[10][10];
  
     printf("Toplama işlemi için \n");
-    printf("Satır sayısı girin: ", m);
+    printf("Satır sayısı girin : ", m);
     scanf("%d",&m);
-    printf("Sütun sayısı girin: ", n);
+    printf("Sütun sayısı girin : ", n);
        scanf("%d",&n);
      
    /*printf("Toplama işlemi için Satırları ve sütunları girin\n");
@@ -68,7 +68,7 @@ int m, n, c, d, first[10][10], second[10][10], sum[10][10];
    for (c = 0; c < m; c++)
       for (d = 0; d < n; d++)
       {
-         printf("Bir değer a[%d][%d] girin :: ",c,d);
+         printf("Bir değer a[%d][%d] girin : ",c,d);
                  scanf("%d", &first[c][d]);
                  }
  
@@ -77,11 +77,11 @@ int m, n, c, d, first[10][10], second[10][10], sum[10][10];
    for (c = 0; c < m; c++)
       for (d = 0 ; d < n; d++)
         {
-         printf("Bir değer a[%d][%d] girin :: ",c,d);
+         printf("Bir değer [%d][%d] girin : ",c,d);
                  scanf("%d", &second[c][d]);
                  }
    
-   printf("Girilen matrisin toplamı:-\n");
+   printf("Girilen matrisin toplamı : \n");
    
    for (c = 0; c < m; c++) {
       for (d = 0 ; d < n; d++) {
@@ -101,16 +101,16 @@ system("cls");
 int m, n, c, d, first[10][10], second[10][10], difference[10][10];
  
     printf("Çıkarma işlemi için \n");
-    printf("Satır sayısı girin: ", m);
+    printf("Satır sayısı girin : ", m);
     scanf("%d",&m);
-    printf("Sütun sayısı girin: ", n);
+    printf("Sütun sayısı girin : ", n);
        scanf("%d",&n);
    printf("İlk matrisin elemanlarını girin\n");
  
    for (c = 0; c < m; c++)
      for (d = 0 ; d < n; d++)
        {
-         printf("Bir değer a[%d][%d] girin : ",c,d);
+         printf("Bir değer [%d][%d] girin : ",c,d);
                  scanf("%d", &first[c][d]);
                  }
  
@@ -119,11 +119,11 @@ int m, n, c, d, first[10][10], second[10][10], difference[10][10];
    for (c = 0; c < m; c++)
      for (d = 0; d < n; d++)
          {
-         printf("Bir değer a[%d][%d] girin : ",c,d);
+         printf("Bir değer [%d][%d] girin : ",c,d);
                  scanf("%d", &second[c][d]);
                  }
  
-   printf("Çıkartma işlemin sonucu:\n");
+   printf("Çıkartma işlemin sonucu : \n");
  
    for (c = 0; c < m; c++) {
      for (d = 0; d < n; d++) {
@@ -143,16 +143,16 @@ int m, n, p, q, c, d, k, sum = 0;
   int first[10][10], second[10][10], multiply[10][10];
  
    printf("Çarma işlemi için ilk matrisin \n");
-    printf("Satır sayısı girin: ", m);
+    printf("Satır sayısı girin : ", m);
     scanf("%d",&m);
-    printf("Sütun sayısı girin: ", n);
+    printf("Sütun sayısı girin : ", n);
        scanf("%d",&n);
   printf("İlk matrisin elemanlarını girin\n");
  
   for (c = 0; c < m; c++)
     for (d = 0; d < n; d++)
       {
-         printf("Bir değer a[%d][%d] girin :: ",c,d);
+         printf("Bir değer [%d][%d] girin : ",c,d);
                  scanf("%d", &first[c][d]);
                  }
  
@@ -171,7 +171,7 @@ int m, n, p, q, c, d, k, sum = 0;
     for (c = 0; c < p; c++)
       for (d = 0; d < q; d++)
         {
-         printf("Bir değer a[%d][%d] girin :: ",c,d);
+         printf("Bir değer [%d][%d] girin : ",c,d);
                  scanf("%d", &second[c][d]);
                  }
  
@@ -186,7 +186,7 @@ int m, n, p, q, c, d, k, sum = 0;
       }
     }
  
-    printf("Matrislerin çarpımı:\n");
+    printf("Matrislerin çarpımı : \n");
  
     for (c = 0; c < m; c++) {
       for (d = 0; d < q; d++)
@@ -205,16 +205,16 @@ system("cls");
     int A[10][10],i,j,m,n;
     int row, col, num;
  
-    printf("Satır sayısını girin :: ");
+    printf("Satır sayısını girin : ");
         scanf("%d", &m);
         printf("Sütun sayısını girin :: ");
         scanf("%d",&n);
-        printf("\nMatris elemanlarını girin :: \n");
+        printf("\nMatris elemanlarını girin : \n");
         for (i = 0; i < m; i++)
         {
             for (j = 0; j < n; j++)
             {
-                 printf("Bir değer a[%d][%d] girin :: ",i,j);
+                 printf("Bir değer [%d][%d] girin : ",i,j);
                  scanf("%d", &A[i][j]);
         }
     }
@@ -230,7 +230,7 @@ system("cls");
             printf("\n\n");
         }
  
-    printf("\nMatrisle çarpmak için herhangi bir sayı girin :: ");
+    printf("\nMatrisle çarpmak için herhangi bir sayı girin : ");
     scanf("%d", &num);
 
     for(row=0; row<m; row++)
@@ -241,7 +241,7 @@ system("cls");
         }
     }
  
-    printf("\nMatrisin skaler çarpımı = \n\n");
+    printf("\nMatrisin skaler çarpımı : \n\n");
     for (i = 0; i < m; ++i)
         {
             for (j = 0; j < n; ++j)
@@ -258,13 +258,13 @@ menu();
 void transpose(){
 system("cls");
 int a[10][10], transpose[10][10], r, c, i, j;
-    printf("Transpoze işlemi için Satırları ve sütunları girin: ");
+    printf("Transpoze işlemi için Satırları ve sütunları girin : ");
     scanf("%d %d", &r, &c);
 
-    printf("\nMatris elemanlarını girin:\n");
+    printf("\nMatris elemanlarını girin : \n");
     for (i = 0; i < r; ++i)
         for (j = 0; j < c; ++j) {
-            printf("Bir değer [%d][%d] girin: ", i, j);
+            printf("Bir değer [%d][%d] girin : ", i, j);
             scanf("%d", &a[i][j]);
         }
 
@@ -280,7 +280,7 @@ int a[10][10], transpose[10][10], r, c, i, j;
         for (j = 0; j < c; ++j) {
             transpose[j][i] = a[i][j];
         }
-    printf("\nMatrisin Transpozu:\n");
+    printf("\nMatrisin Transpozu : \n");
     for (i = 0; i < c; ++i)
         for (j = 0; j < r; ++j) {
             printf("%d  ", transpose[i][j]);
@@ -302,12 +302,12 @@ int A[10][10];
     scanf("%d",&m);
     printf("Sütun sayısı girin: ", n);
        scanf("%d",&n);
-    printf("Matrisin elemanlarını girin: \n");
+    printf("Matrisin elemanlarını girin : \n");
     for(c=0; c<m; c++)
     {
         for(d=0; d<n; d++)
         {
-            printf("Bir değer [%d][%d] girin: ", c, d);
+            printf("Bir değer [%d][%d] girin : ", c, d);
             scanf("%d", &A[c][d]);
 			
         }
@@ -331,16 +331,16 @@ system("cls");
 static int array1[10][10], array2[10][10];
     int i, j, m, n, a, b, c, p, q, r;
  		printf("Değiş Tokuş işlemi için \n");
-        printf("Satır sayısını girin: ");
+        printf("Satır sayısını giri n: ");
         scanf("%d", &m);
-        printf("\nSütun sayısını girin: ");
+        printf("\nSütun sayısını girin : ");
         scanf("%d",&n);
-        printf("\nMatris elemanlarını girin: \n");
+        printf("\nMatris elemanlarını girin : \n");
         for (i = 0; i < m; i++)
         {
             for (j = 0; j < n; j++)
             {
-                 printf("\nBir değer [%d][%d] girin: ",i,j);
+                 printf("\nBir değer [%d][%d] girin : ",i,j);
                  scanf("%d", &array1[i][j]);
                  array2[i][j] = array1[i][j];
         }
@@ -359,7 +359,7 @@ static int array1[10][10], array2[10][10];
     
     printf("\nDeğiştirilecek satır numarasını girin : ");
     scanf("%d", &a);
-    printf("\nDeğiş tokuş edilecek diğer satır numarasını girin: ");
+    printf("\nDeğiş tokuş edilecek diğer satır numarasını girin : ");
     scanf("%d",&b);
     
     for (i = 0; i < m; ++i)
@@ -379,7 +379,7 @@ static int array1[10][10], array2[10][10];
         array2[i][p - 1] = array2[i][q - 1];
         array2[i][q - 1] = r;
      }
-    printf("\nİki satırı değiştirdikten sonraki matris:  \n");
+    printf("\nİki satırı değiştirdikten sonraki matris : \n");
     for (i = 0; i < m; ++i)
         {
         for (j = 0; j < n; ++j)
@@ -389,7 +389,7 @@ static int array1[10][10], array2[10][10];
         printf("\n\n");
     }
     
-    printf("\nİki sütunu değiştirdikten sonraki matris: \n");
+    printf("\nİki sütunu değiştirdikten sonraki matris : \n");
     
     for (i = 0; i < m; ++i)
         {
