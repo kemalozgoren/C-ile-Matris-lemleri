@@ -122,6 +122,8 @@ int m, n, c, d, first[10][10], second[10][10], difference[10][10];
          printf("Bir değer [%d][%d] girin : ",c,d);
                  scanf("%d", &second[c][d]);
                  }
+                 
+                 
  
    printf("Çıkartma işlemin sonucu : \n");
  
@@ -258,8 +260,11 @@ menu();
 void transpose(){
 system("cls");
 int a[10][10], transpose[10][10], r, c, i, j;
-    printf("Transpoze işlemi için Satırları ve sütunları girin : ");
-    scanf("%d %d", &r, &c);
+    printf("Transpoze işlemi için \n");
+    printf("Satır sayısı girin: ", r);
+    scanf("%d",&r);
+    printf("Sütun sayısı girin: ", c);
+       scanf("%d",&c);
 
     printf("\nMatris elemanlarını girin : \n");
     for (i = 0; i < r; ++i)
