@@ -21,7 +21,7 @@ printf("\t3-Çarpma İşlemi\n");
 printf("\t4-Sabit Çarpma İşlemi\n");
 printf("\t5-Transpoze İşlemi\n");
 printf("\t6-Determinant İşlemi\n");
-printf("\t7-Tersi İşlemi\n");
+printf("\t7-Tersi Matris İşlemi\n");
 printf("\t8-Değiş Tokuş İşlemi\n");
 printf("\t0-Çıkış\n\n");
 printf("İşlem Seçiniz: ");
@@ -450,48 +450,52 @@ menu();
 
 //reverse
 
-
 void reverse (){
 system("cls");
-int A[10][10],i,j,m,n;
-    int row, col, num;
- 	printf("Tersi işlemi için \n");
-    printf("Satır sayısını girin : ");
-        scanf("%d", &m);
-        printf("Sütun sayısını girin :: ");
-        scanf("%d",&n);
-        printf("\nMatris elemanlarını girin : \n");
-        for (i = 0; i < m; i++)
-        {
-            for (j = 0; j < n; j++)
-            {
-                 printf("Bir değer [%d][%d] girin : ",i,j);
-                 scanf("%d", &A[i][j]);
+float matrix[10][10], ratio,a;
+    int i, j, k, n;
+    printf("Matrisin büyüklüğünü girin: ");
+    scanf("%d", &n);
+    printf("Matrisin elemanlarını girin: \n");
+    for(i = 0; i < n; i++){
+        for(j = 0; j < n; j++){
+        	printf("Bir değer [%d][%d] girin : ", i, j);
+            scanf("%f", &matrix[i][j]);
         }
     }
- 
-    printf("\nVerilen Matris :: \n\n");
- 
-        for (i = 0; i < m; ++i)
-        {
-            for (j = 0; j < n; ++j)
-            {
-                printf("\t%d", A[i][j]);
-            }
-            printf("\n\n");
+    for(i = 0; i < n; i++){
+        for(j = n; j < 2*n; j++){
+            if(i==(j-n))
+                matrix[i][j] = 1.0;
+            else
+                matrix[i][j] = 0.0;
         }
-        printf("\nVerilen Matisin Tersi: \n\n");
- 
-        for (i = 0; i < m; ++i)
-        {
-            for (j = 0; j < n; ++j)
-            {
-                printf("\t%d", A[j][i]);
+    }
+    for(i = 0; i < n; i++){
+        for(j = 0; j < n; j++){
+            if(i!=j){
+                ratio = matrix[j][i]/matrix[i][i];
+                for(k = 0; k < 2*n; k++){
+                    matrix[j][k] -= ratio * matrix[i][k];
+                }
             }
-            printf("\n\n");
         }
- 
-
+    }
+    for(i = 0; i < n; i++){
+        a = matrix[i][i];
+        for(j = 0; j < 2*n; j++){
+            matrix[i][j] /= a;
+        }
+    }
+    
+    printf("Verilen Matrisin Ters Matrisi: \n");
+    for(i = 0; i < n; i++){
+        for(j = n; j < 2*n; j++){
+            printf("%.2f", matrix[i][j]);
+            printf("\t");
+        }
+        printf("\n");
+    }
 system("PAUSE");
 menu();
 }
