@@ -80,6 +80,26 @@ int m, n, c, d, first[10][10], second[10][10], sum[10][10];
          printf("Bir değer [%d][%d] girin : ",c,d);
                  scanf("%d", &second[c][d]);
                  }
+    printf("\nVerilen 1. Matris :: \n\n");
+ 
+        for (c = 0; c < m; ++c)
+        {
+            for (d = 0; d < n; ++d)
+            {
+                printf("\t%d", first[c][d]);
+            }
+            printf("\n\n");
+        }
+        printf("\nVerilen 2. Matris :: \n\n");
+ 
+        for (c = 0; c < m; ++c)
+        {
+            for (d = 0; d < n; ++d)
+            {
+                printf("\t%d", second[c][d]);
+            }
+            printf("\n\n");
+        }
    
    printf("Girilen matrisin toplamı : \n");
    
@@ -123,7 +143,26 @@ int m, n, c, d, first[10][10], second[10][10], difference[10][10];
                  scanf("%d", &second[c][d]);
                  }
                  
-                 
+ printf("\nVerilen 1. Matris :: \n\n");
+ 
+        for (c = 0; c < m; ++c)
+        {
+            for (d = 0; d < n; ++d)
+            {
+                printf("\t%d", first[c][d]);
+            }
+            printf("\n\n");
+        }
+        printf("\nVerilen 2. Matris :: \n\n");
+ 
+        for (c = 0; c < m; ++c)
+        {
+            for (d = 0; d < n; ++d)
+            {
+                printf("\t%d", second[c][d]);
+            }
+            printf("\n\n");
+        }                
  
    printf("Çıkartma işlemin sonucu : \n");
  
@@ -206,7 +245,7 @@ void sabmultiplication(){
 system("cls");
     int A[10][10],i,j,m,n;
     int row, col, num;
- 
+	printf("Sabit Çarpma işlemi için \n");
     printf("Satır sayısını girin : ");
         scanf("%d", &m);
         printf("Sütun sayısını girin :: ");
@@ -414,11 +453,45 @@ menu();
 
 void reverse (){
 system("cls");
-    
-printf ("\n");
-        printf ("***** YAPAMADIM! İSTENİLENİ ANLAMADIM*****\n");
-        printf ("***** HERHANGİ BİR TUŞA BASARAK MENÜYE DÖNÜN!*****\n");
-    
+int A[10][10],i,j,m,n;
+    int row, col, num;
+ 	printf("Tersi işlemi için \n");
+    printf("Satır sayısını girin : ");
+        scanf("%d", &m);
+        printf("Sütun sayısını girin :: ");
+        scanf("%d",&n);
+        printf("\nMatris elemanlarını girin : \n");
+        for (i = 0; i < m; i++)
+        {
+            for (j = 0; j < n; j++)
+            {
+                 printf("Bir değer [%d][%d] girin : ",i,j);
+                 scanf("%d", &A[i][j]);
+        }
+    }
+ 
+    printf("\nVerilen Matris :: \n\n");
+ 
+        for (i = 0; i < m; ++i)
+        {
+            for (j = 0; j < n; ++j)
+            {
+                printf("\t%d", A[i][j]);
+            }
+            printf("\n\n");
+        }
+        printf("\nVerilen Matisin Tersi: \n\n");
+ 
+        for (i = 0; i < m; ++i)
+        {
+            for (j = 0; j < n; ++j)
+            {
+                printf("\t%d", A[j][i]);
+            }
+            printf("\n\n");
+        }
+ 
+
 system("PAUSE");
 menu();
 }
