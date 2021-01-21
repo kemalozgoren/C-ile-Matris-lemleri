@@ -1,3 +1,10 @@
+/*
+Araştırma:Cansel Özkaya
+Alogritma : Ahmet Yılmaz
+Kodlama: Kemal Özgören
+Hata Ayıklama: Kemal Özgören
+Kullanıcı Geri Dönüşümü:Sibel Bilgin
+*/
 #include <stdio.h>
 #include <locale.h>
 #include <stdlib.h>
