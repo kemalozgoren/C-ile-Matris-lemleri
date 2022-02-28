@@ -1,9 +1,9 @@
 /*
-Araştırma:Cansel Özkaya
-Alogritma : Ahmet Yılmaz
+Araştırma:Kemal Özgören
+Alogritma : Kemal Özgören
 Kodlama: Kemal Özgören
 Hata Ayıklama: Kemal Özgören
-Kullanıcı Geri Dönüşümü:Sibel Bilgin
+Kullanıcı Geri Dönüşümü:Kemal Özgören
 */
 #include <stdio.h>
 #include <locale.h>
